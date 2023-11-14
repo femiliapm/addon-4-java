@@ -7,6 +7,22 @@ public class Another {
     System.out.println(other.protectedAttr);
     System.out.println(other.defaultAttr);
     System.out.println(other.getPrivateAttr());
+    System.out.println(other.getName());
+    System.out.println(other);
+
+    // re-instance obj
+    other = new Other("ilham");
+    System.out.println(other.getName());
+    System.out.println(other);
+
+    // instance another obj of other class
+    Other other2 = new Other("kartini");
+    System.out.println(other2.getName());
+
+    /* obj reference with array */
+    // for (int i = 0; i < args.length; i++) {
+
+    // }
 
     System.out.println();
     System.out.print("teks 1");

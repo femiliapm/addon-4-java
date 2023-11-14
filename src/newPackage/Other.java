@@ -12,6 +12,7 @@ public class Other {
   protected String protectedAttr = "teks ini bermodifier protected";
   String defaultAttr = "teks ini bermodifier default atau tanpa modifier";
   private String privateAttr = "teks ini private modifier";
+  private String name;
 
   // method setter - getter
   public void setPrivateAttr(String parameter) {
@@ -26,7 +27,17 @@ public class Other {
     return privateAttr;
   }
 
-  // constructor
+  public String getName() {
+    return name;
+  }
+
+  // constructor: metode khusus untuk menginit object dari kelas
+  public Other() {
+  }
+
+  public Other(String nama) {
+    name = nama;
+  }
 }
 
 // class Another {

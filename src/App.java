@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
 import newPackage.Other;
@@ -58,6 +60,10 @@ public class App {
         Other other = new Other();
         System.out.println(other.globalTeks);
         // System.out.println(other.);
+
+        // Date
+        LocalDate date = LocalDate.now();
+        System.out.println(date.format(DateTimeFormatter.ofPattern("EEEE, dd MMM yyyy")));
     }
 
     // method untuk menampilkan nama lengkap dari parameter nama depan dan nama
