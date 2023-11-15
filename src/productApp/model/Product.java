@@ -13,7 +13,9 @@ public class Product {
   }
 
   public Product(String name, Double price, Integer quantity) {
-
+    this.setName(name);
+    this.setPrice(price);
+    this.setQuantity(quantity);
   }
 
   public String getName() {

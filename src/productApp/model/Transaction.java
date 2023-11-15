@@ -13,7 +13,8 @@ public class Transaction {
   }
 
   public Transaction(Double totalAmount, Customer customer) {
-
+    this.setTotalAmount(totalAmount);
+    this.setCustomer(customer);
   }
 
   public LocalDateTime getDate() {
